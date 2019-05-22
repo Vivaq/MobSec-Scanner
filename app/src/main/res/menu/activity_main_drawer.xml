@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <item android:title="Discovery">
+        <menu>
+            <item
+                    android:id="@+id/host_scan"
+                    android:title="Host scan"/>
+            <item
+                    android:id="@+id/port_scan"
+                    android:title="Port scan"/>
+            <item
+                    android:id="@+id/bt_scan"
+                    android:title="Bluetooth scan"/>
+            <item
+                    android:id="@+id/wifi_scan"
+                    android:title="Wifi scan"/>
+        </menu>
+    </item>
+    <item android:title="Attacks">
+        <menu>
+            <item
+                    android:id="@+id/bt_attack"
+                    android:title="Bluetooth apk attack"/>
+            <item
+                    android:id="@+id/wifi_attack"
+                    android:title="WiFi Brute Force"/>
+        </menu>
+    </item>
+    <item android:title="Tools">
+        <menu>
+            <item
+                    android:id="@+id/wifi_tunnel"
+                    android:title="WiFi tunnel"/>
+            <item
+                    android:id="@+id/get_scan_results"
+                    android:title="Show saved scans"/>
+        </menu>
+    </item>
+</menu>
