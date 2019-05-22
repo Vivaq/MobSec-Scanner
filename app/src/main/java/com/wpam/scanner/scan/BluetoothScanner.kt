@@ -51,7 +51,11 @@ class BluetoothScanner (
                         BluetoothDevice.DEVICE_TYPE_DUAL -> {type = "dual"}
                     }
                     Thread {
-                        db.bluetoothDao().insertAll(Bluetooth(0, device.address, device.name, type))
+                        var name = ""
+                        if (device.name != null) {
+                            name = device.name
+                        }
+                        db.bluetoothDao().insertAll(Bluetooth(0, device.address, name, type))
                     }.start()
                 }
                 BluetoothAdapter.ACTION_DISCOVERY_FINISHED -> {
