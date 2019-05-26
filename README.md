@@ -1,1 +1,1 @@
-For education purposes only.
+For educational purposes only.
